@@ -1,5 +1,4 @@
 // app.js：渲染结果
-import { splitSegment, locateSegment } from "./segments.js";
 import { step, close } from "./rangesrun.js";
 
 export function render(spec) {
@@ -30,6 +29,5 @@ export function render(spec) {
            closed_equal: fingerprint(closedTwo.state) === fingerprint(closed.state),
            replay_new: replay.served, judged: first.judged, judged_bound: first.judged_bound,
            full_diff: fingerprint(closed.state) === fingerprint(fullClosed.state) ? 0 : 1,
-           count: events.length,
-           tail: locateSegment([[0, 9]], 3) + splitSegment([[0, 9]], 0).length };
+           count: events.length };
 }
