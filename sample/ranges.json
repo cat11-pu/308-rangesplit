@@ -1,0 +1,13 @@
+{
+  "budget": 1,
+  "range_error_code": "E_NO_RANGE",
+  "small_error_code": "E_TOO_SMALL",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "segments": [[0, 10]], "found": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "split", "start": 0 },
+    { "id": 2, "kind": "find", "key": 7 },
+    { "id": 3, "kind": "split", "start": 5 },
+    { "id": 4, "kind": "find", "key": 3 }
+  ]
+}
